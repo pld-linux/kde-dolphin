@@ -49,7 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog TODO
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/dolphin
-%dir %{_datadir}/apps/dolphin
 %{_datadir}/apps/dolphin
 %{_desktopdir}/kde/dolphin.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
