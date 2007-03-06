@@ -29,7 +29,12 @@ features of Dolphin are:
 %setup -q -n %{_name}-%{version}
 
 %build
-%configure
+%configure \
+%if "%{_lib}" == "lib64"
+	--enable-libsuffix=64 \
+%endif
+	--%{?debug:en}%{!?debug:dis}able-debug%{?debug:=full} \
+	--with-qt-libraries=%{_libdir}
 %{__make}
 
 %install
