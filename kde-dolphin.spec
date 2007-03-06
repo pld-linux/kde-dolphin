@@ -1,10 +1,10 @@
 %define 	_name dolphin
 
 Summary:	File manager for KDE
-Summary(pl.UTF-8):	Manager plików dla KDE
+Summary(pl.UTF-8):	Zarządca plików dla KDE
 Name:		kde-%{_name}
 Version:	0.8.2
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://enzosworld.gmxhome.de/download/%{_name}-%{version}.tar.gz
@@ -24,6 +24,18 @@ features of Dolphin are:
      - Network transparency.
      - Undo/redo functionality.
      - Renaming of a variable number of selected items in one step.
+
+%description -l pl.UTF-8
+Dolphin jest zarządcą plików dla KDE zorientowanym na użytkowość.
+Głównymi właściwościami Dolphin są:
+     - Pasek nawigacyjny z URLami, który pozwala na szybką nawigację
+        w hierarchii plików.
+     - Ustawienia wyświetlania są zapamiętywane dla każdego katalogu.
+     - Wsparcie dla podzielonych widoków.
+     - Przezroczystość sieciowa.
+     - Wsparcie dla cofnięć/ponowień operacji.
+     - Modyfikacja nazw zmiennej ilości zaznaczonych obiektów w jednym
+        kroku.
 
 %prep
 %setup -q -n %{_name}-%{version}
