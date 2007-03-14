@@ -17,25 +17,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dolphin is a file manager for KDE focusing on usability. The main
 features of Dolphin are:
-     - Navigation bar for URLs, which allows to navigate quickly through 
-        the file hierarchy.
-     - View properties are remembered for each folder.
-     - Split of views is supported.
-     - Network transparency.
-     - Undo/redo functionality.
-     - Renaming of a variable number of selected items in one step.
+ - Navigation bar for URLs, which allows to navigate quickly through
+   the file hierarchy.
+ - View properties are remembered for each folder.
+ - Split of views is supported.
+ - Network transparency.
+ - Undo/redo functionality.
+ - Renaming of a variable number of selected items in one step.
 
 %description -l pl.UTF-8
 Dolphin jest zarządcą plików dla KDE zorientowanym na użytkowość.
-Głównymi właściwościami Dolphin są:
-     - Pasek nawigacyjny z URLami, który pozwala na szybką nawigację
-        w hierarchii plików.
-     - Ustawienia wyświetlania są zapamiętywane dla każdego katalogu.
-     - Wsparcie dla podzielonych widoków.
-     - Przezroczystość sieciowa.
-     - Wsparcie dla cofnięć/ponowień operacji.
-     - Modyfikacja nazw zmiennej ilości zaznaczonych obiektów w jednym
-        kroku.
+Głównymi właściwościami Dolphina są:
+ - Pasek nawigacyjny z URL-ami, który pozwala na szybką nawigację
+   w hierarchii plików.
+ - Ustawienia wyświetlania są zapamiętywane dla każdego katalogu.
+ - Wsparcie dla podzielonych widoków.
+ - Przezroczystość sieciowa.
+ - Wsparcie dla cofnięć/ponowień operacji.
+ - Modyfikacja nazw zmiennej ilości zaznaczonych obiektów w jednym
+   kroku.
 
 %prep
 %setup -q -n %{_name}-%{version}
