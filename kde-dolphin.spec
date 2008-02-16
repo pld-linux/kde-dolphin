@@ -4,7 +4,7 @@ Summary:	File manager for KDE
 Summary(pl.UTF-8):	Zarządca plików dla KDE
 Name:		kde-%{_name}
 Version:	0.8.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://enzosworld.gmxhome.de/download/%{_name}-%{version}.tar.gz
@@ -55,6 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
+
+rm -rf $RPM_BUILD_ROOT/usr/share/locale/dolphin
 
 %find_lang %{_name} --with-kde
 
